@@ -90,6 +90,10 @@ body {
 
 /* navigation bar */
 
+.ham-burger{
+    display: none;
+}
+
 .nav-bar{
     align-items: center;
     justify-content: space-between;
@@ -160,7 +164,7 @@ li a{
 
 
 .banner-content{
-    width: 45%;
+    width: 100%;
 }
 
 .banner-header{
@@ -183,7 +187,8 @@ li a{
 #shape{
     font-family: 'Miama', sans-serif;    
     font-weight: normal;  
-    font-size: 7.5rem;    
+    font-size: 9rem;  
+    line-height: 1rem;  
 }
 
 .button{
@@ -229,6 +234,52 @@ li a{
     font-size: 0.7rem;
 
 }
+
+
+/* Run Mile */
+.run-mile-container {
+    width: 80%;
+    height: 80%;
+    margin: 5rem auto;
+    justify-items:end;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(34, 34, 34, 1); 
+    border-radius: 10px;
+}
+
+.text-align{
+    width: 40%;
+    height: auto;
+    text-align: left;
+    margin-left: 3rem;
+}
+
+.btn{
+    margin-top: 2rem;
+}
+
+.run-mile-child > img{
+    width: 65%;
+    height: 65%;
+    border: none;
+    border-radius: 10px;
+}
+
+
+/* Fitness important */
+
+.fitness-important{
+    text-align: center;
+}
+
+.fitness-important-text{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
 
 /* BMI styles*/
 
@@ -303,6 +354,107 @@ li a{
 }
 
 
+/* Info card */
+.white1{
+    font-weight:bolder;
+    font-size:1.5rem;
+    color: #FFFFFF;
+}
+
+.white2{
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.dot{
+    height: 2rem;
+    width: 2rem;
+    background-color:#FF5400;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.info-card{
+    position: relative;
+}
+
+.info-card1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;    
+    top: 65%;
+    left: 15%;
+    font-size: 10px;
+    transform: translate(-70%, -1%);
+    background-color: rgba(48, 48, 48, 0.54);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 40%;
+    height: auto;
+    padding: 0.8rem;
+    border-radius: 4px;
+}
+
+.info-card2{
+    position: absolute;   
+    top: 23%;
+    left: 90%;
+    font-size: 10px;
+    transform: translate(-70%, -1%);
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 40%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    height: auto;
+    padding: 0.6rem;
+    border-radius: 6px;
+}
+
+
+/* Meet our TEam */
+
+.meet-our-team-text{
+    text-align: center;
+}
+
+.meet-our-team-pics{
+    width: 80%;
+    height: auto;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(34, 34, 34, 1); 
+    border-radius: 15px;
+    padding: 50px;
+}
+
+
+.team-img{
+    width: 19rem;
+    height: 15rem;
+    padding: 10px;
+    filter: brightness(70%);
+}
+
+.meet-our-team-text{
+    margin: 5rem auto;
+}
+
+.trainer-card{
+    position: relative;
+}
+
+
+.trainer{
+    position: absolute;
+    top: 85%;
+    left: 25%;
+    font-size: 10px;
+    transform: translate(-85%, -25%);
+}
+
 
 /* Footer Section */
 
@@ -365,13 +517,128 @@ hr{
 /* media responsive */
 @media screen and (max-width: 576px) {
 
+    /* nav styles */
+
+    .nav-bar{
+        margin-top: 2rem;
+    }
+    #live{
+        font-size: 1.5rem;    
+    }
+
+    #shape{
+        font-size: 6rem;
+    }
+
+    .fa-solid{
+        font-size: 1.5rem;    
+    }
+    
+    #fitness{
+        font-size: 1.5rem;    
+    }
+
+    .nav-items{
+        display: none;
+    }
+
+    .ham-burger{
+        display: block;
+    }
+
+    .fa-bars{
+        color: white;
+        background-color: black;  
+    }
+
+    /* nav ends here */
+
+
+    /* banner */
+
+    .banner-header{
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+
+    .banner-description{
+        width: 15rem;
+        margin-top: 0.7rem;
+        line-height: 1.3rem;
+    }
+    .btn-primary{
+        width: 100%;
+        margin: 1rem auto;
+        padding: 0.7rem 0.8rem;
+    }
+    .btn-secondary{
+        width: 100%;
+        margin: 1rem 0;
+        padding: 0.7rem 0.8rem;
+      }
+
+      .info-card1{  
+        top: 50%;
+        left: 30%;
+        padding: 0.5rem;
+    }
+    
+    .info-card2{
+        position: absolute;   
+        top: 10%;
+        left: 85%;
+        padding: 0.3rem;
+    }
+    
+   /* banner styles ends */
+
+
+   /* fitness is important */
+      .fitness-important-text{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .white-heading{
+        font-size: 2rem;
+    }
+
+    .grey-p{
+        font-size: 0.6rem;
+    }
+
+    .fitness-important-video >iframe{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2rem;
+    }
+
+
+
+     /* Change Your Habits Section  */
+
+     .habit-child{
+        margin-bottom: 2rem;
+     }
+    .banner{
+        flex-direction: column;
+    }
+
+    .banner-content{
+        margin-top: 2rem;
+    }
+
     .change-your-habits{
-        text-align:left;
-        margin: 0;
+        text-align:center;
+        margin: 0 auto;
     }
     .habit-container{
         flex-direction: column;
-        justify-items: left;
+        justify-items: center;
     }
     
+
+
+
+
 }
